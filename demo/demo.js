@@ -19,8 +19,7 @@ var makeDemoMap = function(el, layerName) {
           properties: {
               'marker-color': '#5b8dd3',
               'marker-symbol': 'harbor',
-              'title': 'Ahoy!',
-              'description': 'Shiver me Timbers'
+              'title': 'Ahoy there!'
           }
       });
       markerLayer.markers()[0].showTooltip();

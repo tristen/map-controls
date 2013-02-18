@@ -111,7 +111,7 @@
 .map-fullscreen {
   width:30px;
   height:30px;
-  background-position:-90px 0;
+  background-position:-91px -1px;
   position:absolute;
   top:10px;
   left:74px;

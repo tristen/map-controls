@@ -1,9 +1,6 @@
-
-
 ## Building
 
-If you wish to customize the src you will need to export 
-
+TODO
 
 ### base64 encoding image controls in osx
 
