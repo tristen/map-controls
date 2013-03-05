@@ -49,6 +49,7 @@ body {
   color:#404040;
   }
 body {
+  background:#f6f6f6;
   margin:0; padding:0;
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
@@ -76,9 +77,8 @@ h1,h2,h3,h4,h5,h6 {
   }
 
 h1 {
-  font-size:36px;
-  line-height:1.25em;
-  margin:0 0 30px;
+  font-size:15px;
+  margin:0;
   }
 
 h2 {
@@ -94,8 +94,8 @@ h3 {
   }
 
 h4 {
-  font-size: 12px;
-  line-height: 1.666em;
+  font-size:12px;
+  line-height:1.666em;
   margin:0 0 10px;
   }
 
@@ -105,6 +105,32 @@ a {
   }
   a:hover {
     color:#1bbaec;
+    }
+
+.button {
+  background-color:#EBEBEB;
+  background-image:-webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#EBEBEB));
+  background-image:-webkit-linear-gradient(top, whiteSmoke, #EBEBEB);
+  background-image:-moz-linear-gradient(top, whiteSmoke, #EBEBEB);
+  background-image:-ms-linear-gradient(top, whiteSmoke, #EBEBEB);
+  background-image:-o-linear-gradient(top, whiteSmoke, #EBEBEB);
+  background-image:linear-gradient(to bottom, whiteSmoke, #EBEBEB);
+  text-align:center;
+  display:inline-block;
+  color:#404040;
+  font-weight:bold;
+  border:1px solid #B0B0B0;
+  text-shadow: 0 1px 0 white;
+  padding:4px 18px;
+  }
+  .button:hover {
+    color:#404040;
+    -webkit-box-shadow:0 1px 4px rgba(0,0,0,0.15);
+            box-shadow:0 1px 4px rgba(0,0,0,0.15);
+    }
+  .button:active {
+    -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.25);
+        box-shadow:inset 0 1px 2px rgba(0,0,0,0.25);
     }
 
 img {
@@ -159,14 +185,33 @@ strong {
   Layout
 -------------------------------------*/
 .limiter {
-  width:720px;
+  width:960px;
   padding:40px 20px;
   margin:0 auto;
   }
+.heading {
+  margin:0 0 10px;
+  }
+  .heading h3 {
+    position:relative;
+    top:5px;
+    float:left;
+    }
 
 /*-----------------------------------
   Style
 -------------------------------------*/
+iframe {
+  width:100%;
+  height:240px;
+  margin-bottom:20px;
+  }
+.footer {
+  background:#fff;
+  padding:20px 0 0;
+  text-align:center;
+  height:40px;
+  }
 
 /*-----------------------------------
   Mobile
@@ -186,6 +231,8 @@ strong {
   display:block;
   text-align:center;
   }
+.fr { float:right; }
+.fl { float:left; }
 
 /*Markup free clearing
 Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/

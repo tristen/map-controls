@@ -1,3 +1,5 @@
+@import 'icons.less';
+
 .share {
   font:bold 10px/18px Arial,sans-serif;
   text-align:center;
@@ -83,14 +85,20 @@
       }
 
   .map-share .close {
+    background-image:@darkIcons;
+    background-repeat:no-repeat;
     background-position:0 0;
-    .icons;
+    display:block;
+    text-indent:-999em;
+    width:30px;
+    height:30px;
     position:absolute;
     top:0;right:0;
     &:active {
-      background-color:darken(@background, 5);
-      border-color:darken(@border, 5);
-      .insetshadow
+      background-color:darken(#fff, 5);
+      border-color:darken(#fff, 5);
+      .insetshadow;
+      .radius(0 4px 0 0);
       }
     }
   .map-share .twitter,
@@ -118,6 +126,7 @@
   only screen and (-webkit-min-device-pixel-ratio : 2),
   only screen and (min-device-pixel-ratio : 2) {
     .map-share .close {
-      .icons-retina;
+      background-image:@darkIconsRetina; 
+      background-size: 150px 30px;
       }
   }

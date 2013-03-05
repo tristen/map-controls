@@ -5,16 +5,13 @@ var makeDemoMap = function(el, layerName) {
         map.ui.fullscreen.add(); 
         mapbox.share().add();
 
-      // Creates an empty markers layer
       var markerLayer = mapbox.markers.layer();
       mapbox.markers.interaction(markerLayer);
       map.addLayer(markerLayer);
 
-      // Add a single feature to the markers layer.
-      // You can use .features() to add multiple features.
       markerLayer.add_feature({
           geometry: {
-              coordinates: [-41,38]
+              coordinates: [-38,28]
           },
           properties: {
               'marker-color': '#5b8dd3',
