@@ -1,0 +1,37 @@
+.map-fullscreen {
+  .icons;
+  background-color:@background;
+  background-position:-90px 0;
+  position:absolute;
+  top:10px;left:75px;
+  z-index:1;
+  border:1px solid @border;
+  box-sizing:border-box;
+  .radius;
+
+  &:active {
+    background-color:darken(@background, 5);
+    border-color:darken(@border, 5);
+    .insetshadow
+    }
+  }
+
+.map-fullscreen-map {
+  position:fixed!important;
+  width:auto!important;
+  height:auto!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  bottom:0!important;
+  z-index:99999999999;
+  }
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio : 2),
+  only screen and (min-device-pixel-ratio : 2) {
+    .map-fullscreen {
+      .icons-retina;
+    }
+  }
+

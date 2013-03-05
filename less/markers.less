@@ -1,0 +1,40 @@
+.marker-tooltip {
+  z-index:999999;
+  position:absolute;
+  }
+.marker-popup {
+  position:relative;
+  left:-50%;
+  max-width:400px;
+  background:#fff;
+  border:2px solid @border;
+  color:@color;
+  padding:10px;
+  -webkit-user-select:auto;
+     -moz-user-select:auto;
+          user-select:auto;
+  -webkit-box-shadow:2px 2px 5px -2px rgba(0,0,0,0.25);
+          box-shadow:2px 2px 5px -2px rgba(0,0,0,0.25);
+  .radius;
+  }
+  .marker-popup:after,
+  .marker-popup:before {
+    top:100%;
+    border:solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    left:50%;
+    position:absolute;
+    pointer-events:none;
+    }
+  .marker-popup:after {
+    border-top-color:#fff;
+    border-width:15px;
+    margin-left:-15px;
+    }
+  .marker-popup:before {
+    border-top-color:@border;
+    border-width:18px;
+    margin-left:-18px;
+    }

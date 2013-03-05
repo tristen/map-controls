@@ -1,0 +1,36 @@
+.zoomer {
+  .icons;
+  background-color:@background;
+  position:absolute;
+  top:10px;left:10px;
+  z-index:1;
+  border:1px solid @border;
+  box-sizing:border-box;
+  .radius;
+
+  &:active {
+    background-color:darken(@background, 5);
+    border-color:darken(@border, 5);
+    .insetshadow
+    }
+  }
+  .zoomin {
+    left:39px;
+    background-position:-30px 0;
+    .radius(0 3px 3px 0);
+    }
+  .zoomout {
+    background-position:-60px 0;
+    .radius(3px 0 0 3px);
+    }
+  .zoomdisabled {
+    background-color:darken(@background, 5);
+    }
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio : 2),
+  only screen and (min-device-pixel-ratio : 2) {
+    .zoomer {
+      .icons-retina;
+    }
+  }
