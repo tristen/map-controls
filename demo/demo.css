@@ -189,6 +189,13 @@ strong {
   padding:40px 20px;
   margin:0 auto;
   }
+.header {
+  border-bottom:1px solid #ccc;
+  padding:0 0 10px;
+  margin:0 0 40px;
+  -webkit-box-shadow:0 1px 0 #fff;
+          box-shadow:0 1px 0 #fff;
+  }
 .heading {
   margin:0 0 10px;
   }
@@ -196,12 +203,14 @@ strong {
     position:relative;
     top:5px;
     float:left;
+    margin-right:10px;
     }
 
 /*-----------------------------------
   Style
 -------------------------------------*/
 iframe {
+  background:#fff;
   width:100%;
   height:240px;
   margin-bottom:20px;
